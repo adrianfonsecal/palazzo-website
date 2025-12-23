@@ -1,0 +1,113 @@
+/* --- CONFIGURACIÓN DE BRANDING --- */
+:root {
+    --color-carbonblack: #1f1f1f;
+    /* Negro carbón - Primario */
+    --color-sand: #c1ad76;
+    /* Arena - Secundario */
+    --color-coolsteel: #819595;
+    /* Acero frío - Acento */
+    --color-ashgrey: #c9cdc2;
+    /* Gris Niebla - Fondos Claros */
+    --color-charcoal: #4d4d4d;
+    /* Champán - Tarjetas/Cajas */
+}
+
+/* Fuentes Personalizadas */
+.font-serif-heading {
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Cinzel', 'medium 500';
+}
+
+.font-sans-body {
+    font-family: 'Lato', sans-serif;
+}
+
+.font-script {
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Clases de utilidad para colores de la marca */
+.bg-carbonblack {
+    background-color: var(--color-carbonblack);
+}
+
+.bg-sand {
+    background-color: var(--color-sand);
+}
+
+.bg-ashgrey {
+    background-color: var(--color-ashgrey);
+}
+
+.bg-charcoal {
+    background-color: var(--color-charcoal);
+}
+
+.text-carbonblack {
+    color: var(--color-carbonblack);
+}
+
+.text-sand {
+    color: var(--color-sand);
+}
+
+.text-coolsteel {
+    color: var(--color-coolsteel);
+}
+
+.text-ashgrey {
+    color: var(--color-ashgrey);
+}
+
+.border-rosegold {
+    border-color: var(--color-coolsteel);
+}
+
+/* Botón Principal (Estilo Oro Rosado) */
+.btn-primary {
+    background-color: var(--color-coolsteel);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b88a6a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 163, 129, 0.4);
+}
+
+/* Botón Secundario (Outline) */
+.btn-secondary {
+    border: 2px solid var(--color-coolsteel);
+    color: var(--color-coolsteel);
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-coolsteel);
+    color: white;
+}
+
+/* Animaciones */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Degradado sutil para el Hero */
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(29, 38, 91, 0.95) 0%, rgba(13, 93, 86, 0.9) 100%);
+}
+
+/* Tamaño del logotipo */
+
+.website-logo {
+    width: 150px;
+}
