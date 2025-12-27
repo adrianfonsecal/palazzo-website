@@ -66,8 +66,12 @@
     color: var(--color-ashgrey);
 }
 
-.border-rosegold {
-    border-color: var(--color-coolsteel);
+.text-charcoal {
+    color: var(--color-charcoal);
+}
+
+.border-sand {
+    border-color: var(--color-sand);
 }
 
 /* Botón Principal (Estilo Oro Rosado) */
@@ -130,4 +134,14 @@
 
 .website-logo {
     width: 150px;
+}
+
+/* Efecto Hover en las tarjetas de ejemplo */
+
+.portfolio-card:hover .portfolio-img {
+    transform: scale(1.1);
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 1;
 }
