@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palazzo Invites | Experiencias Digitales para Bodas</title>
     <link rel="icon" href="/images/header/PalazzoInvitesIconDBG.svg" type="image/x-icon">
-    
+
     <!-- Tailwind CSS (Para estilos rápidos y responsivos) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&display=swap&family=Cinzel:wght@400..900&display=swap"" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&display=swap&family=Cinzel:wght@400..900&display=swap"" rel="
+        stylesheet">
+
     <!-- FontAwesome (Para Iconos) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="/styles/index/index.css">
 </head>
+
 <body class="font-sans-body bg-ashgrey text-gray-800 antialiased overflow-x-hidden">
 
     <!-- NAV -->
-    <nav class="bg-carbonblack text-white fixed w-full z-50 shadow-lg">
+    <nav class="bg-carbonblack text-white w-full z-50 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <!-- Aquí iría tu imagen de logo. Por ahora uso texto con el estilo -->
-                    <link rel="stylesheet" href="#"><img src="/images/index/WebsiteLogoDark.png" alt="logo" class="website-logo">
-                </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#beneficios" class="hover:text-coolsteel transition-colors uppercase text-xs tracking-widest">Beneficios</a>
-                    <a href="#paquetes" class="hover:text-coolsteel transition-colors uppercase text-xs tracking-widest">Paquetes</a>
-                    <a href="#contacto" class="btn-secondary px-5 py-2 rounded-full uppercase text-xs tracking-widest font-bold">Empezar</a>
-                </div>
 
-                <!-- Mobile Menu Button -->
+                <a href="/" class="shrink-0 flex items-center gap-2 cursor-pointer">
+                <a src="/images/index/WebsiteLogoDark.png" alt="Palazzo Invites Logo" class='website-logo w-auto h-auto' />
+                </a>
+
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="/"
+                        class="hover:text-coolsteel transition-colors uppercase text-xs tracking-widest">Home</a>
+                    <a href="/"
+                        class="hover:text-coolsteel transition-colors uppercase text-xs tracking-widest">Contacto
+                    </a>
+                    <a href="https://app.palazzoinvites.com/login"
+                            class="btn-primary px-5 py-2 rounded-full uppercase text-xs tracking-widest font-bold">
+                        Iniciar Sesión
+                        </a>
+
+                </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-white hover:text-coolsteel focus:outline-none">
                         <i class="fa-solid fa-bars text-2xl"></i>
@@ -46,12 +54,15 @@
                 </div>
             </div>
         </div>
-        <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-sand">
+
+        <div id="mobile-menu" class="md:hidden bg-sand hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
-                <a href="#beneficios" class="block px-3 py-2 text-base font-medium text-white hover:bg-carbonblack">Beneficios</a>
-                <a href="#paquetes" class="block px-3 py-2 text-base font-medium text-white hover:bg-carbonblack">Paquetes</a>
-                <a href="#contacto" class="block px-3 py-2 text-base font-medium text-white hover:bg-carbonblack">Contacto</a>
+                <a href="/"
+                    class="block px-3 py-2 text-base font-medium text-white hover:bg-carbonblack">Home</a>
+                <a href="/"
+                    class="block px-3 py-2 text-base font-medium text-white hover:bg-carbonblack">Contacto</a>
+                <a href="https://app.palazzoinvites.com/login" class="block px-3 py-2 text-base font-medium text-white hover:bg-carbonblack">
+                Iniciar Sesión</a>
             </div>
         </div>
     </nav>
@@ -60,7 +71,8 @@
     <header class="relative h-screen flex items-center justify-center text-center px-4" id="inicio">
         <!-- Background Image Placeholder (Unsplash) -->
         <div class="absolute inset-0 z-0">
-            <img src="https://wp-media-partyslate.imgix.net/2023/09/stunning-white-wedding-at-the-lighthouse-in-new-york-new_2201071.jpg?auto=compress%2Cformat&ixlib=php-3.3.1" alt="Boda elegante" class="w-full h-full object-cover">
+            <img src="https://wp-media-partyslate.imgix.net/2023/09/stunning-white-wedding-at-the-lighthouse-in-new-york-new_2201071.jpg?auto=compress%2Cformat&ixlib=php-3.3.1"
+                alt="Boda elegante" class="w-full h-full object-cover">
             <!-- Overlay con los colores de la marca -->
             <div class="absolute inset-0 hero-overlay"></div>
         </div>
@@ -68,14 +80,18 @@
         <div class="relative z-10 max-w-4xl mx-auto fade-in-section">
             <p class="text-white font-script text-3xl md:text-5xl mb-4">Bienvenidos a la nueva era</p>
             <h1 class="font-serif-heading text-4xl md:text-6xl lg:text-7xl text-charcoal font-bold mb-6 leading-tight">
-                Elegancia Atemporal, <br/> Experiencia Digital.
+                Elegancia Atemporal, <br /> Experiencia Digital.
             </h1>
             <p class="text-gray-800 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">
-                Creamos invitaciones web inmersivas que combinan la sofisticación de un palacio con la tecnología moderna.
+                Creamos invitaciones web inmersivas que combinan la sofisticación de un palacio con la tecnología
+                moderna.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#paquetes" class="btn-primary px-8 py-3 rounded text-sm uppercase tracking-widest font-bold">Ver Paquetes</a>
-                <a href="#contacto" class="border border-white text-white hover:bg-white hover:text-[#c1ad76] px-8 py-3 rounded text-sm uppercase tracking-widest font-bold transition-all">Solicitar Demo</a>
+                <a href="#paquetes"
+                    class="btn-primary px-8 py-3 rounded text-sm uppercase tracking-widest font-bold">Ver Paquetes</a>
+                <a href="#contacto"
+                    class="border border-white text-white hover:bg-white hover:text-[#c1ad76] px-8 py-3 rounded text-sm uppercase tracking-widest font-bold transition-all">Solicitar
+                    Demo</a>
             </div>
         </div>
     </header>
@@ -84,37 +100,45 @@
     <section id="beneficios" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-section">
-                <h2 class="font-serif-heading text-3xl md:text-4xl text-carbonblack font-bold mb-4">¿Por qué Palazzo?</h2>
+                <h2 class="font-serif-heading text-3xl md:text-4xl text-carbonblack font-bold mb-4">¿Por qué Palazzo?
+                </h2>
                 <div class="w-24 h-1 bg-coolsteel mx-auto mb-4"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Más que una invitación, es el centro de control para tus invitados.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Más que una invitación, es el centro de control para tus
+                    invitados.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <!-- Beneficio 1 -->
-                <div class="text-center p-6 bg-white shadow-md border-t-4 border-gray-300 rounded-lg hover:shadow-xl hover:shadow-[#c9cdc2] transition-shadow fade-in-section" style="transition-delay: 100ms;"> 
-                <div class="w-16 h-16 bg-carbonblack rounded-full flex items-center justify-center mx-auto mb-6">
+                <div class="text-center p-6 bg-white shadow-md border-t-4 border-gray-300 rounded-lg hover:shadow-xl hover:shadow-[#c9cdc2] transition-shadow fade-in-section"
+                    style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-carbonblack rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fa-solid fa-envelope-open-text text-sand text-2xl"></i>
                     </div>
                     <h3 class="font-serif-heading text-xl font-bold text-sand mb-2">RSVP Inteligente</h3>
-                    <p class="text-gray-600 text-sm">Olvida las hojas de cálculo. Recibe confirmaciones al instante y gestiona alergias o acompañantes desde tu panel.</p>
+                    <p class="text-gray-600 text-sm">Olvida las hojas de cálculo. Recibe confirmaciones al instante y
+                        gestiona alergias o acompañantes desde tu panel.</p>
                 </div>
 
                 <!-- Beneficio 2 -->
-                <div class="text-center p-6 bg-white shadow-md border-t-4 border-gray-300 rounded-lg hover:shadow-xl hover:shadow-[#c9cdc2] transition-shadow fade-in-section" style="transition-delay: 100ms;"> 
+                <div class="text-center p-6 bg-white shadow-md border-t-4 border-gray-300 rounded-lg hover:shadow-xl hover:shadow-[#c9cdc2] transition-shadow fade-in-section"
+                    style="transition-delay: 100ms;">
                     <div class="w-16 h-16 bg-carbonblack rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fa-solid fa-map-location-dot text-sand text-2xl"></i>
                     </div>
                     <h3 class="font-serif-heading text-xl font-bold text-sand mb-2">Guía Interactiva</h3>
-                    <p class="text-gray-600 text-sm">Integración con Google Maps, Uber y recomendaciones de hospedaje para que nadie se pierda.</p>
+                    <p class="text-gray-600 text-sm">Integración con Google Maps, Uber y recomendaciones de hospedaje
+                        para que nadie se pierda.</p>
                 </div>
 
                 <!-- Beneficio 3 -->
-                <div class="text-center p-6 bg-white shadow-md border-t-4 border-gray-300 rounded-lg hover:shadow-xl hover:shadow-[#c9cdc2] transition-shadow fade-in-section" style="transition-delay: 100ms;"> 
+                <div class="text-center p-6 bg-white shadow-md border-t-4 border-gray-300 rounded-lg hover:shadow-xl hover:shadow-[#c9cdc2] transition-shadow fade-in-section"
+                    style="transition-delay: 100ms;">
                     <div class="w-16 h-16 bg-carbonblack rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fa-solid fa-camera-retro text-sand text-2xl"></i>
                     </div>
                     <h3 class="font-serif-heading text-xl font-bold text-sand mb-2">Galería Eterna</h3>
-                    <p class="text-gray-600 text-sm">Comparte tus fotos pre-boda y permite que tus invitados suban sus recuerdos después del evento.</p>
+                    <p class="text-gray-600 text-sm">Comparte tus fotos pre-boda y permite que tus invitados suban sus
+                        recuerdos después del evento.</p>
                 </div>
             </div>
         </div>
@@ -122,15 +146,16 @@
 
     <!-- PAQUETES (Services) -->
     <section id="paquetes" class="py-20 bg-white">
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-section">
                 <span class="text-sand font-bold tracking-widest text-xs uppercase">Nuestros Servicios</span>
-                <h2 class="font-serif-heading text-3xl md:text-4xl text-carbonblack font-bold mt-2">Elige tu Experiencia</h2>
+                <h2 class="font-serif-heading text-3xl md:text-4xl text-carbonblack font-bold mt-2">Elige tu Experiencia
+                </h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                
+
                 <!-- Paquete 1: Esencial -->
                 <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-gray-300 fade-in-section relative">
                     <h3 class="font-serif-heading text-2xl text-carbonblack font-bold">Esencial</h3>
@@ -141,12 +166,16 @@
                         <li><i class="fa-solid fa-check text-sand mr-2"></i> RSVP Básico (Email)</li>
                         <li><i class="fa-solid fa-check text-sand mr-2"></i> Hosting por 3 meses</li>
                     </ul>
-                    <a href="#contacto" class="block w-full text-center py-2 btn-alternative text-carbonblack rounded uppercase text-xs font-bold">Cotizar</a>
+                    <a href="#contacto"
+                        class="block w-full text-center py-2 btn-alternative text-carbonblack rounded uppercase text-xs font-bold">Cotizar</a>
                 </div>
 
                 <!-- Paquete 2: Palazzo (Destacado) -->
-                <div class="bg-white p-10 rounded-xl shadow-2xl border-2 border-coolsteel transform scale-105 z-10 fade-in-section">
-                    <div class="absolute top-0 right-0 bg-coolsteel text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">Más Popular</div>
+                <div
+                    class="bg-white p-10 rounded-xl shadow-2xl border-2 border-coolsteel transform scale-105 z-10 fade-in-section">
+                    <div
+                        class="absolute top-0 right-0 bg-coolsteel text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
+                        Más Popular</div>
                     <h3 class="font-serif-heading text-3xl text-carbonblack font-bold">Palazzo</h3>
                     <p class="text-gray-500 text-sm mb-6">La experiencia completa.</p>
                     <ul class="space-y-4 mb-8 text-sm text-gray-600">
@@ -156,7 +185,9 @@
                         <li><i class="fa-solid fa-check text-sand mr-2"></i> Mesa de Regalos / Links Bancarios</li>
                         <li><i class="fa-solid fa-check text-sand mr-2"></i> Hosting por 6 meses</li>
                     </ul>
-                    <a href="#contacto" class="block w-full text-center py-3 btn-primary rounded uppercase text-xs font-bold">Cotizar Ahora</a>
+                    <a href="#contacto"
+                        class="block w-full text-center py-3 btn-primary rounded uppercase text-xs font-bold">Cotizar
+                        Ahora</a>
                 </div>
 
                 <!-- Paquete 3: Imperial -->
@@ -170,7 +201,8 @@
                         <li><i class="fa-solid fa-check text-sand mr-2"></i> Generación de QR para acceso</li>
                         <li><i class="fa-solid fa-check text-sand mr-2"></i> Hosting por 1 año</li>
                     </ul>
-                    <a href="#contacto" class="block w-full text-center py-2 btn-alternative text-carbonblack rounded uppercase text-xs font-bold">Cotizar</a>
+                    <a href="#contacto"
+                        class="block w-full text-center py-2 btn-alternative text-carbonblack rounded uppercase text-xs font-bold">Cotizar</a>
                 </div>
 
             </div>
@@ -182,69 +214,88 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in-section">
                 <span class="text-sand font-bold tracking-widest text-xs uppercase">Nuestros Trabajos</span>
-                <h2 class="font-serif-heading text-3xl md:text-4xl text-carbonblack font-bold mt-2">Inspiración Real</h2>
-                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Explora cómo hemos transformado la visión de otras parejas en experiencias digitales únicas.</p>
+                <h2 class="font-serif-heading text-3xl md:text-4xl text-carbonblack font-bold mt-2">Inspiración Real
+                </h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Explora cómo hemos transformado la visión de otras
+                    parejas en experiencias digitales únicas.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
+
                 <!-- Ejemplo 1: Clásico Romántico -->
-                <div class="portfolio-card group relative overflow-hidden rounded-xl shadow-lg cursor-pointer bg-white fade-in-section">
+                <div
+                    class="portfolio-card group relative overflow-hidden rounded-xl shadow-lg cursor-pointer bg-white fade-in-section">
                     <!-- Imagen de Fondo (Placeholder) -->
                     <div class="h-64 overflow-hidden">
-                         <img src="https://www.bunnypants.co.za/wp-content/uploads/2020/09/images_portfolio_wedding-stationery_online-wedding-design.jpg.webp" alt="Boda Clásica" class="portfolio-img w-full h-full object-cover transition duration-700 ease-in-out">
+                        <img src="https://www.bunnypants.co.za/wp-content/uploads/2020/09/images_portfolio_wedding-stationery_online-wedding-design.jpg.webp"
+                            alt="Boda Clásica"
+                            class="portfolio-img w-full h-full object-cover transition duration-700 ease-in-out">
                     </div>
                     <!-- Contenido -->
                     <div class="p-6">
                         <div class="flex justify-between items-baseline mb-2">
                             <h3 class="font-serif-heading text-xl font-bold text-carbonblack">Sofía & Mateo</h3>
-                            <span class="text-xs font-bold text-sand border border-sand px-2 py-1 rounded-full">Clásico</span>
+                            <span
+                                class="text-xs font-bold text-sand border border-sand px-2 py-1 rounded-full">Clásico</span>
                         </div>
                         <p class="text-gray-500 text-sm mb-4">Hacienda San Gabriel</p>
-                        <a href="#" onclick="alert('Aquí iría el link al demo: midominio.com/sofia-mateo')" class="text-coolsteel text-sm font-bold uppercase tracking-widest hover:text-midnight transition-colors">
+                        <a href="#" onclick="alert('Aquí iría el link al demo: midominio.com/sofia-mateo')"
+                            class="text-coolsteel text-sm font-bold uppercase tracking-widest hover:text-midnight transition-colors">
                             Ver Invitación <i class="fa-solid fa-arrow-right ml-1"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Ejemplo 2: Destino Playa -->
-                <div class="portfolio-card group relative overflow-hidden rounded-xl shadow-lg cursor-pointer bg-white fade-in-section" style="transition-delay: 200ms;">
+                <div class="portfolio-card group relative overflow-hidden rounded-xl shadow-lg cursor-pointer bg-white fade-in-section"
+                    style="transition-delay: 200ms;">
                     <div class="h-64 overflow-hidden">
-                        <img src="https://withjoy.com/assets/public/stationery-og-save-the-date-2.png" alt="Boda en Playa" class="portfolio-img w-full h-full object-cover transition duration-700 ease-in-out">
+                        <img src="https://withjoy.com/assets/public/stationery-og-save-the-date-2.png"
+                            alt="Boda en Playa"
+                            class="portfolio-img w-full h-full object-cover transition duration-700 ease-in-out">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-baseline mb-2">
                             <h3 class="font-serif-heading text-xl font-bold text-midnight">Valeria & Luis</h3>
-                            <span class="text-xs font-bold text-sand border border-sand px-2 py-1 rounded-full">Playa</span>
+                            <span
+                                class="text-xs font-bold text-sand border border-sand px-2 py-1 rounded-full">Playa</span>
                         </div>
                         <p class="text-gray-500 text-sm mb-4">Tulum, Quintana Roo</p>
-                        <a href="#" onclick="alert('Aquí iría el link al demo: midominio.com/valeria-luis')" class="text-coolsteel text-sm font-bold uppercase tracking-widest hover:text-midnight transition-colors">
+                        <a href="#" onclick="alert('Aquí iría el link al demo: midominio.com/valeria-luis')"
+                            class="text-coolsteel text-sm font-bold uppercase tracking-widest hover:text-midnight transition-colors">
                             Ver Invitación <i class="fa-solid fa-arrow-right ml-1"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Ejemplo 3: Noche de Gala -->
-                <div class="portfolio-card group relative overflow-hidden rounded-xl shadow-lg cursor-pointer bg-white fade-in-section" style="transition-delay: 100ms;">
+                <div class="portfolio-card group relative overflow-hidden rounded-xl shadow-lg cursor-pointer bg-white fade-in-section"
+                    style="transition-delay: 100ms;">
                     <div class="h-64 overflow-hidden">
-                        <img src="https://cdn0.weddingwire.com/vendor/184331/3_2/960/jpg/img3_51_2133481-168261167579074.jpeg" alt="Boda de Noche" class="portfolio-img w-full h-full object-cover transition duration-700 ease-in-out">
+                        <img src="https://cdn0.weddingwire.com/vendor/184331/3_2/960/jpg/img3_51_2133481-168261167579074.jpeg"
+                            alt="Boda de Noche"
+                            class="portfolio-img w-full h-full object-cover transition duration-700 ease-in-out">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-baseline mb-2">
                             <h3 class="font-serif-heading text-xl font-bold text-midnight">Ana & Carlos</h3>
-                            <span class="text-xs font-bold text-sand border-sand border px-2 py-1 rounded-full">Gala</span>
+                            <span
+                                class="text-xs font-bold text-sand border-sand border px-2 py-1 rounded-full">Gala</span>
                         </div>
                         <p class="text-gray-500 text-sm mb-4">Museo de Arte Moderno</p>
-                        <a href="#" onclick="alert('Aquí iría el link al demo: midominio.com/ana-carlos')" class="text-coolsteel text-sm font-bold uppercase tracking-widest hover:text-midnight transition-colors">
+                        <a href="#" onclick="alert('Aquí iría el link al demo: midominio.com/ana-carlos')"
+                            class="text-coolsteel text-sm font-bold uppercase tracking-widest hover:text-midnight transition-colors">
                             Ver Invitación <i class="fa-solid fa-arrow-right ml-1"></i>
                         </a>
                     </div>
                 </div>
 
             </div>
-            
+
             <div class="text-center mt-12">
-                 <a href="#contacto" class="btn-secondary px-8 py-3 rounded-full text-sm font-bold tracking-widest uppercase inline-block">Quiero un diseño así</a>
+                <a href="#contacto"
+                    class="btn-secondary px-8 py-3 rounded-full text-sm font-bold tracking-widest uppercase inline-block">Quiero
+                    un diseño así</a>
             </div>
         </div>
     </section>
@@ -261,18 +312,26 @@
                 <form id="contactForm" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label for="name" class="block text-xs uppercase tracking-widest text-sand mb-2">Nombre</label>
-                            <input type="text" id="name" class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors" placeholder="Tu nombre">
+                            <label for="name"
+                                class="block text-xs uppercase tracking-widest text-sand mb-2">Nombre</label>
+                            <input type="text" id="name"
+                                class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors"
+                                placeholder="Tu nombre">
                         </div>
                         <div>
-                            <label for="email" class="block text-xs uppercase tracking-widest text-sand mb-2">Email</label>
-                            <input type="email" id="email" class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors" placeholder="tu@email.com">
+                            <label for="email"
+                                class="block text-xs uppercase tracking-widest text-sand mb-2">Email</label>
+                            <input type="email" id="email"
+                                class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors"
+                                placeholder="tu@email.com">
                         </div>
                     </div>
-                    
+
                     <div>
-                        <label for="package" class="block text-xs uppercase tracking-widest text-sand mb-2">Interés</label>
-                        <select id="package" class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors">
+                        <label for="package"
+                            class="block text-xs uppercase tracking-widest text-sand mb-2">Interés</label>
+                        <select id="package"
+                            class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors">
                             <option value="General" class="text-carbonblack">Información General</option>
                             <option value="Esencial" class="text-carbonblack">Paquete Esencial</option>
                             <option value="Palazzo" class="text-carbonblack">Paquete Palazzo</option>
@@ -281,12 +340,17 @@
                     </div>
 
                     <div>
-                        <label for="message" class="block text-xs uppercase tracking-widest text-sand mb-2">Mensaje</label>
-                        <textarea id="message" rows="4" class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors" placeholder="Fecha del evento, lugar, dudas..."></textarea>
+                        <label for="message"
+                            class="block text-xs uppercase tracking-widest text-sand mb-2">Mensaje</label>
+                        <textarea id="message" rows="4"
+                            class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors"
+                            placeholder="Fecha del evento, lugar, dudas..."></textarea>
                     </div>
 
                     <div class="text-center">
-                        <button type="submit" class="btn-primary px-10 py-3 rounded uppercase text-sm font-bold tracking-widest w-full md:w-auto">Enviar Mensaje</button>
+                        <button type="submit"
+                            class="btn-primary px-10 py-3 rounded uppercase text-sm font-bold tracking-widest w-full md:w-auto">Enviar
+                            Mensaje</button>
                     </div>
                 </form>
             </div>
@@ -297,12 +361,16 @@
     <footer class="bg-carbonblack text-gray-400 py-10 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="flex justify-center gap-2 items-center mb-6">
-                 <link rel="stylesheet" href="#"><img src="/images/index/WebsiteLogoDark.png" alt="logo" class="website-logo">
+                <link rel="stylesheet" href="#"><img src="/images/index/WebsiteLogoDark.png" alt="logo"
+                    class="website-logo">
             </div>
             <div class="flex justify-center space-x-6 mb-6">
-                <a href="#" class="hover:text-coolsteel transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
-                <a href="#" class="hover:text-coolsteel transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
-                <a href="#" class="hover:text-coolsteel transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+                <a href="#" class="hover:text-coolsteel transition-colors"><i
+                        class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-coolsteel transition-colors"><i
+                        class="fa-brands fa-facebook text-xl"></i></a>
+                <a href="#" class="hover:text-coolsteel transition-colors"><i
+                        class="fa-brands fa-whatsapp text-xl"></i></a>
             </div>
             <p class="text-xs tracking-widest">&copy; 2025 Palazzo Invites. Todos los derechos reservados.</p>
         </div>
@@ -311,4 +379,12 @@
     <!-- JAVASCRIPT -->
     <script type="module" src="scripts/index/index.js"></script>
 </body>
+
 </html>
+
+<nav className="bg-white shadow px-6 py-4 flex justify-between items-center">
+    <h1 className="text-xl font-bold text-slate-800">Palazzo Invites</h1>
+    <button onClick={handleLogout} className="text-sm text-red-600 hover:text-red-800 font-medium">
+        Cerrar Sesión
+    </button>
+</nav>
