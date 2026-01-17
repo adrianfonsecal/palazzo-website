@@ -34,26 +34,13 @@ document.querySelectorAll('.fade-in-section').forEach(section => {
     observer.observe(section);
 });
 
-// 4. Form Handler (Simulado)
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    const originalText = btn.innerText;
+// Phone Number formatter
 
-    btn.innerText = "Enviando...";
-    btn.classList.add('opacity-75');
-
-    // Simular envío
-    setTimeout(() => {
-        alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
-        this.reset();
-        btn.innerText = "Mensaje Enviado";
-        btn.style.backgroundColor = "var(--color-sand)";
-
-        setTimeout(() => {
-            btn.innerText = originalText;
-            btn.style.backgroundColor = "";
-            btn.classList.remove('opacity-75');
-        }, 3000);
-    }, 1500);
-});
+// In your script:
+var phoneInput = document.getElementById('phone');
+var maskOptions = {
+    mask: '(000) 000-0000', // Defines the pattern
+    lazy: false, // Shows the mask always
+};
+var mask = IMask(phoneInput, maskOptions);
+// HTML input: <input type="tel" id="phone" placeholder="(XXX) XXX-XXXX">

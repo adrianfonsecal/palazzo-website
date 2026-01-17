@@ -145,3 +145,7 @@
 .portfolio-card:hover .portfolio-overlay {
     opacity: 1;
 }
+
+.honeypot {
+    display: none;
+}

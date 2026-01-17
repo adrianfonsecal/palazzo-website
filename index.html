@@ -36,13 +36,13 @@
 
 
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="/"
+                    <a href="#inicio"
                         class="hover:text-coolsteel transition-colors uppercase text-xs tracking-widest">Home</a>
-                    <a href="/"
+                    <a href="#contacto"
                         class="hover:text-coolsteel transition-colors uppercase text-xs tracking-widest">Contacto</a>
                     <a href="https://app.palazzoinvites.com/login"
                         class="btn-primary px-5 py-2 rounded-full uppercase text-xs tracking-widest font-bold">Iniciar
-                        Sesión</a>
+                        Sesión en Portal</a>
 
                 </div>
                 <div class="md:hidden flex items-center">
@@ -177,10 +177,10 @@
                 <!-- Paquete 2: Palazzo (Destacado) 
                 -->
                 <div
-                    class="bg-white p-10 rounded-xl shadow-2xl border-2 border-coolsteel transform scale-105 z-10 fade-in-section">
+                    class="relative bg-white p-10 rounded-xl shadow-2xl border-2 border-coolsteel transform scale-105 z-10 fade-in-section">
 
                     <div
-                        class="absolute top-0 right-0 bg-coolsteel text-white text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
+                        class="absolute top-0 right-0 bg-coolsteel text-sand text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
                         Más Popular</div>
                     <h3 class="font-serif-heading text-3xl text-carbonblack font-bold">Palazzo</h3>
                     <p class="text-gray-500 text-sm mb-6">La experiencia completa.</p>
@@ -333,7 +333,11 @@
 
             <div class="bg-white/5 p-8 rounded-lg backdrop-blur-sm border border-white/10 fade-in-section">
                 <form id="contactForm" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div style="display: none;">
+                        <label for="honeypot">No llenar esto</label>
+                        <input type="text" id="honeypot" name="honeypot">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div>
                             <label for="name"
                                 class="block text-xs uppercase tracking-widest text-sand mb-2">Nombre</label>
@@ -348,6 +352,13 @@
                                 class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors"
                                 placeholder="tu@email.com">
                         </div>
+                        <div>
+                            <label for="phone" class="block text-xs uppercase tracking-widest text-sand mb-2">Número de
+                                teléfono</label>
+                            <input type="tel" id="phone"
+                                class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors"
+                                placeholder="(XXX) XXX-XXXX">
+                        </div>
                     </div>
 
                     <div>
@@ -356,7 +367,7 @@
                         <select id="package"
                             class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors">
                             <option value="General" class="text-carbonblack">Información General</option>
-                            <option value="Esencial" class="text-carbonblack">Paquete Esencial</option>
+                            <option value="Esencial" class="text-carbonblack">Paquete Premium</option>
                             <option value="Palazzo" class="text-carbonblack">Paquete Palazzo</option>
                             <option value="Imperial" class="text-carbonblack">Paquete Imperial</option>
                         </select>
@@ -369,12 +380,13 @@
                             class="w-full bg-white/10 border border-gray-600 rounded px-4 py-2 text-white focus:outline-none focus:border-coolsteel transition-colors"
                             placeholder="Fecha del evento, lugar, dudas..."></textarea>
                     </div>
-
+                    
                     <div class="text-center">
                         <button type="submit"
-                            class="btn-primary px-10 py-3 rounded uppercase text-sm font-bold tracking-widest w-full md:w-auto">Enviar
-                            Mensaje</button>
+                        class="btn-primary px-10 py-3 rounded uppercase text-sm font-bold tracking-widest w-full md:w-auto" id="submitBtn">Enviar
+                        Mensaje</button>
                     </div>
+                    <div id="formResponse" class="hidden text-center text-sm font-bold mt-4"></div>
                 </form>
             </div>
         </div>
@@ -394,15 +406,18 @@
                     class="hover:text-coolsteel transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
                 <a href="https://www.tiktok.com/@palazzo.invites" class="hover:text-coolsteel transition-colors"><i
                         class="fa-brands fa-tiktok text-xl"></i></a>
-                <a href="https://www.tiktok.com/@palazzo.invites" class="hover:text-coolsteel transition-colors"><i
-                        class="fa-brands fa-whatsapp text-xl"></i></a>
+                <a href="https://wa.me/529996382810" target="_blank" class="hover:text-coolsteel transition-colors">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                </a>
             </div>
-            <p class="text-xs tracking-widest">&copy; 2025 Palazzo Invites. Todos los derechos reservados.</p>
+            <p class="text-xs tracking-widest">&copy; 2026 Palazzo Invites. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- JAVASCRIPT -->
+    <script src="https://unpkg.com/imask"></script>
     <script type="module" src="scripts/index/index.js"></script>
+    <script type="module" src="scripts/index/api.js"></script>
 </body>
 
 </html>
